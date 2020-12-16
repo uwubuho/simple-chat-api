@@ -5,6 +5,9 @@ Channels Consumers for chat app
 from channels.generic.websocket import WebsocketConsumer
 
 class EchoConsumer(WebsocketConsumer):
+    """
+    Sends back the message
+    """
 
     def connect(self):
         self.accept()
