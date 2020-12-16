@@ -10,5 +10,6 @@ class PingPongView(APIView):
     """
     Pongs to Pings
     """
+    
     def get(self, request):
         return Response({ 'result' : 'Pong!' }, status=status.HTTP_200_OK)
