@@ -22,7 +22,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'channels',
-    'apps.chat'
+    'apps.users',
+    'apps.chat',
 ]
 
 REST_FRAMEWORK = {
