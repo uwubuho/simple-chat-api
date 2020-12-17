@@ -3,7 +3,6 @@ Websocket Routes for chat app
 """
 
 from django.urls import re_path
-
 from apps.chat import consumers
 
 websocket_urlpatterns = [
