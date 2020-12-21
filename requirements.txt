@@ -11,3 +11,6 @@ channels-redis==3.2.0
 
 # Rest Framework
 djangorestframework==3.12.2
+
+# Media files
+Pillow==8.0.1
