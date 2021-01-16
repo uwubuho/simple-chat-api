@@ -2,6 +2,7 @@
 REST Serializers for users app
 """
 
+from apps.users.models import FriendRequest
 from django.contrib.auth import get_user_model
 from rest_framework.serializers import ModelSerializer
 
@@ -18,3 +19,10 @@ class UserSerializer(ModelSerializer):
         user = User.objects.create_user(**validated_data)
         user.save()
         return user
+
+
+class FriendRequestSerializer(ModelSerializer):
+
+    class Meta:
+        model = FriendRequest
+        fields = ('from_user', 'to_user')
